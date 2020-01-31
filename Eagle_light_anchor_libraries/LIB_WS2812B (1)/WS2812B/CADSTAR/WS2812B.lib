@@ -1,0 +1,17 @@
+.WS2812B :1 ;Intelligent control LED integrated light source
+WS2812B
+*STM IC
+*NGS
+*PLB 1="VDD" 2="DOUT" 3="VSS" 4="DIN"
+*MXP 4
+*DFN WS2812B
+~!Manufacturer_Name (Worldsemi)
+~!Manufacturer_Part_Number (WS2812B)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Link Datasheet (https://www.adafruit.com/datasheets/WS2812B.pdf)
+~!Height (-)
+WS2812B
+1.1!P 2.1!Y 3.1!G 4.1!I 

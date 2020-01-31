@@ -1,0 +1,118 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "WS2812B"
+   (description "Intelligent control LED integrated light source")
+   (family "ANA")
+   (package "WS2812B")
+   (attribute "Datasheet Link" "https://www.adafruit.com/datasheets/WS2812B.pdf")
+   (attribute "Manufacturer_Name" "Worldsemi")
+   (attribute "Manufacturer_Part_Number" "WS2812B")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "RS Part Number" "")
+   (attribute "RS Price/Stock" "")
+   (gate
+    (symbol "WS2812B")
+    (pin "VDD" 1 PP)
+    (pin "DOUT" 2 OP)
+    (pin "VSS" 3 PP)
+    (pin "DIN" 4 IP)
+   )
+  )
+  (symbol "WS2812B"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 900 100) (pt 900 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1100 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "WS2812B"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.325 2.75)
+      (pt 3.325 2.75)
+      (pt 3.325 -2.75)
+      (pt -3.325 -2.75)
+      (pt -3.325 2.75))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.7 2.5)
+      (pt 2.7 2.5)
+      (pt 2.7 -2.5)
+      (pt -2.7 -2.5)
+      (pt -2.7 2.5))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 1.325 -2.475)
+      (pt 2.675 -1.125))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.375 2.5)
+      (pt 1.375 2.5)
+      (pt 1.375 -2.5)
+      (pt -1.375 -2.5)
+      (pt -1.375 2.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.25)
+     (circle
+      (pt -2.95 2.575) (pt -2.7 2.575)
+     )
+    )
+   )
+   (leg 1 (pt -2.4 1.6) (padstack 0))
+   (leg 2 (pt -2.4 -1.6) (padstack 0))
+   (leg 3 (pt 2.4 -1.6) (padstack 0))
+   (leg 4 (pt 2.4 1.6) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.95 1.35 0 0 0))
+   )
+  )
+ )
+)

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "NRF52832-CIAA-R"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-06-06-11:10:45)
+    (mountForm default
+        (footprintRef "BGA50C40P7X8_296X323X40")
+        (spec "System")
+    )
+)

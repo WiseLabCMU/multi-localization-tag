@@ -1,0 +1,3371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.5.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="RADINO">
+<description>&lt;b&gt;radino standard footprint&lt;/b&gt;
+&lt;hr&gt;
+Standard radino footprint suitable for manual and reflow soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino familie.&lt;br&gt;
+&lt;br&gt;</description>
+<smd name="1" x="8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="10" x="-13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="11" x="-13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="12" x="-13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="13" x="-13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="14" x="-13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="15" x="-13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="17" x="-8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="18" x="-6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="19" x="-3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="20" x="-1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="21" x="1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="22" x="3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="23" x="6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="24" x="8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="25" x="13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="26" x="13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="27" x="13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="28" x="13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="51" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="51" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="8.255" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-6.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-8.755" x2="-13.97" y2="-6.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="8.255" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-15.5" y1="-9.5" x2="15.5" y2="9.5" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.633" y="-5.755" curve="90"/>
+<vertex x="10.633" y="-6.755" curve="90"/>
+<vertex x="11.633" y="-7.755" curve="90"/>
+<vertex x="12.633" y="-6.755" curve="90"/>
+</polygon>
+</package>
+<package name="RADINO_SHORT_PINS">
+<description>&lt;b&gt;radino short pins footprint&lt;/b&gt;
+&lt;hr&gt;
+Extra small radino footprint suitable for space limited applicaion an reflow soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino familie.&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Manual soldering is not recommended when using this footprint
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="10" x="-13.5675" y="6.985" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="11" x="-13.5675" y="4.445" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="12" x="-13.5675" y="1.905" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="13" x="-13.5675" y="-0.635" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="14" x="-13.5675" y="-3.175" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="15" x="-13.5675" y="-5.715" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="17" x="-8.89" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="18" x="-6.35" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="19" x="-3.81" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="20" x="-1.27" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="21" x="1.27" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="22" x="3.81" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="23" x="6.35" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="24" x="8.89" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="25" x="13.5675" y="-5.715" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="26" x="13.5675" y="-3.175" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="27" x="13.5675" y="-0.635" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="28" x="13.5675" y="1.905" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.5675" y="6.985" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="21"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="21" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="21" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="21" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-14.5" y1="-9" x2="14.5" y2="9" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.62" y="-5.75" curve="90"/>
+<vertex x="10.62" y="-6.75" curve="90"/>
+<vertex x="11.62" y="-7.75" curve="90"/>
+<vertex x="12.62" y="-6.75" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+</package>
+<package name="RADINO32">
+<description>&lt;b&gt;radino32 standard footprint&lt;/b&gt;
+&lt;hr&gt;
+Standard radino32 footprint suitable for manual and reflow soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino and radino32 families.&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Pins 31 and 32 are reserved for radino32 SWD and should be not connected  when using radino devices
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="10" x="-13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="11" x="-13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="12" x="-13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="13" x="-13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="14" x="-13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="15" x="-13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="17" x="-8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="18" x="-6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="19" x="-3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="20" x="-1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="21" x="1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="22" x="3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="23" x="6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="24" x="8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="25" x="13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="26" x="13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="27" x="13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="28" x="13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="51" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="51" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="8.255" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-6.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-8.755" x2="-13.97" y2="-6.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="8.255" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<smd name="31" x="0" y="4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="32" x="0" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="3.89956875" curve="90"/>
+<vertex x="0.5" y="4.39956875" curve="90"/>
+<vertex x="0" y="4.89956875" curve="90"/>
+<vertex x="-0.5" y="4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="-4.89956875" curve="90"/>
+<vertex x="0.5" y="-4.39956875" curve="90"/>
+<vertex x="0" y="-3.89956875" curve="90"/>
+<vertex x="-0.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-15.5" y1="-9.5" x2="15.5" y2="9.5" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.633" y="-5.755" curve="90"/>
+<vertex x="10.633" y="-6.755" curve="90"/>
+<vertex x="11.633" y="-7.755" curve="90"/>
+<vertex x="12.633" y="-6.755" curve="90"/>
+</polygon>
+</package>
+<package name="RADINO32_HAND_SOLDERING">
+<description>&lt;b&gt;radino32 standard footprint&lt;/b&gt;
+&lt;hr&gt;
+Standard radino32 footprint suitable for manual soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino and radino32 families.&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Pins 31 and 32 are reserved for radino32 SWD and should be not connected  when using radino devices
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="10" x="-13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="11" x="-13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="12" x="-13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="13" x="-13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="14" x="-13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="15" x="-13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="17" x="-8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="18" x="-6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="19" x="-3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="20" x="-1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="21" x="1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="22" x="3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="23" x="6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="24" x="8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="25" x="13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="26" x="13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="27" x="13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="28" x="13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="51" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="51" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="8.255" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-6.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-8.755" x2="-13.97" y2="-6.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="8.255" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-15.5" y1="-9.5" x2="15.5" y2="9.5" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.633" y="-5.755" curve="90"/>
+<vertex x="10.633" y="-6.755" curve="90"/>
+<vertex x="11.633" y="-7.755" curve="90"/>
+<vertex x="12.633" y="-6.755" curve="90"/>
+</polygon>
+<pad name="31" x="0" y="4.39956875" drill="0.91" diameter="1.6" rot="R90"/>
+<pad name="32" x="0" y="-4.39956875" drill="0.91" diameter="1.6" rot="R180"/>
+</package>
+<package name="RADINO32_SHORT_PINS">
+<description>&lt;b&gt;radino32 short pins footprint&lt;/b&gt;
+&lt;hr&gt;
+Extra small radino32 footprint suitable for space limited applicaion an reflow soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino and radino32&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Pins 31 and 32 are reserved for radino32 SWD and should be not connected  when using radino devices
+&lt;li&gt;Manual soldering is not recommended when using this footprint
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="10" x="-13.5675" y="6.985" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="11" x="-13.5675" y="4.445" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="12" x="-13.5675" y="1.905" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="13" x="-13.5675" y="-0.635" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="14" x="-13.5675" y="-3.175" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="15" x="-13.5675" y="-5.715" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="17" x="-8.89" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="18" x="-6.35" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="19" x="-3.81" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="20" x="-1.27" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="21" x="1.27" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="22" x="3.81" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="23" x="6.35" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="24" x="8.89" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="25" x="13.5675" y="-5.715" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="26" x="13.5675" y="-3.175" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="27" x="13.5675" y="-0.635" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="28" x="13.5675" y="1.905" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.5675" y="6.985" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="21"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="21" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="21" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="21" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<smd name="31" x="0" y="4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="32" x="0" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="3.89956875" curve="90"/>
+<vertex x="0.5" y="4.39956875" curve="90"/>
+<vertex x="0" y="4.89956875" curve="90"/>
+<vertex x="-0.5" y="4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="-4.89956875" curve="90"/>
+<vertex x="0.5" y="-4.39956875" curve="90"/>
+<vertex x="0" y="-3.89956875" curve="90"/>
+<vertex x="-0.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-14.5" y1="-9" x2="14.5" y2="9" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.62" y="-5.75" curve="90"/>
+<vertex x="10.62" y="-6.75" curve="90"/>
+<vertex x="11.62" y="-7.75" curve="90"/>
+<vertex x="12.62" y="-6.75" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+</package>
+<package name="RADINO_36PINS">
+<description>&lt;b&gt;radino with 36 pins standard footprint&lt;/b&gt;
+&lt;hr&gt;
+Standard footprint suitable for manual and reflow soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino, radino32 and future radino families.&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Pins 31 and 32 are reserved for radino32 SWD and should be not connected when using radino devices
+&lt;li&gt;Pins 33 to 36 are reserved for future radino families and should be not connected when using radino or radino32 divices
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="10" x="-13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="11" x="-13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="12" x="-13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="13" x="-13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="14" x="-13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="15" x="-13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="17" x="-8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="18" x="-6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="19" x="-3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="20" x="-1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="21" x="1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="22" x="3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="23" x="6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="24" x="8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="25" x="13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="26" x="13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="27" x="13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="28" x="13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="51" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="51" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="8.255" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-6.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-8.755" x2="-13.97" y2="-6.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="8.255" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<smd name="31" x="0" y="4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="32" x="0" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="33" x="3" y="2.54" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="34" x="3" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="35" x="6" y="2.54" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="36" x="6" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="3.89956875" curve="90"/>
+<vertex x="0.5" y="4.39956875" curve="90"/>
+<vertex x="0" y="4.89956875" curve="90"/>
+<vertex x="-0.5" y="4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="-4.89956875" curve="90"/>
+<vertex x="0.5" y="-4.39956875" curve="90"/>
+<vertex x="0" y="-3.89956875" curve="90"/>
+<vertex x="-0.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="3" y="2.04" curve="90"/>
+<vertex x="3.5" y="2.54" curve="90"/>
+<vertex x="3" y="3.04" curve="90"/>
+<vertex x="2.5" y="2.54" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="6" y="-4.89956875" curve="90"/>
+<vertex x="6.5" y="-4.39956875" curve="90"/>
+<vertex x="6" y="-3.89956875" curve="90"/>
+<vertex x="5.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="3" y="-4.89956875" curve="90"/>
+<vertex x="3.5" y="-4.39956875" curve="90"/>
+<vertex x="3" y="-3.89956875" curve="90"/>
+<vertex x="2.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="6" y="2.04" curve="90"/>
+<vertex x="6.5" y="2.54" curve="90"/>
+<vertex x="6" y="3.04" curve="90"/>
+<vertex x="5.5" y="2.54" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-15.5" y1="-9.5" x2="15.5" y2="9.5" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.633" y="-5.755" curve="90"/>
+<vertex x="10.633" y="-6.755" curve="90"/>
+<vertex x="11.633" y="-7.755" curve="90"/>
+<vertex x="12.633" y="-6.755" curve="90"/>
+</polygon>
+</package>
+<package name="RADINO_36PINS_SHORT_PINS">
+<description>&lt;b&gt;radino with 36 pins short pins footprint&lt;/b&gt;
+&lt;hr&gt;
+Extra small footprint suitable for space limited applicaion an reflow soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino, radino32 and future radino families.&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Pins 31 and 32 are reserved for radino32 SWD and should be not connected  when using radino devices
+&lt;li&gt;Pins 33 to 36 are reserved for future radino families and should be not connected when using radino or radino32 divices
+&lt;li&gt;Manual soldering is not recommended when using this footprint
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="10" x="-13.5675" y="6.985" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="11" x="-13.5675" y="4.445" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="12" x="-13.5675" y="1.905" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="13" x="-13.5675" y="-0.635" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="14" x="-13.5675" y="-3.175" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="15" x="-13.5675" y="-5.715" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="17" x="-8.89" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="18" x="-6.35" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="19" x="-3.81" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="20" x="-1.27" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="21" x="1.27" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="22" x="3.81" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="23" x="6.35" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="24" x="8.89" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="25" x="13.5675" y="-5.715" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="26" x="13.5675" y="-3.175" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="27" x="13.5675" y="-0.635" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="28" x="13.5675" y="1.905" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.5675" y="6.985" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="21"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="21" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="21" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="21" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<smd name="31" x="0" y="4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="32" x="0" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="33" x="3" y="2.54" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="34" x="3" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="35" x="6" y="2.54" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="36" x="6" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="3.89956875" curve="90"/>
+<vertex x="0.5" y="4.39956875" curve="90"/>
+<vertex x="0" y="4.89956875" curve="90"/>
+<vertex x="-0.5" y="4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="-4.89956875" curve="90"/>
+<vertex x="0.5" y="-4.39956875" curve="90"/>
+<vertex x="0" y="-3.89956875" curve="90"/>
+<vertex x="-0.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="3" y="2.04" curve="90"/>
+<vertex x="3.5" y="2.54" curve="90"/>
+<vertex x="3" y="3.04" curve="90"/>
+<vertex x="2.5" y="2.54" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="6" y="-4.89956875" curve="90"/>
+<vertex x="6.5" y="-4.39956875" curve="90"/>
+<vertex x="6" y="-3.89956875" curve="90"/>
+<vertex x="5.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="3" y="-4.89956875" curve="90"/>
+<vertex x="3.5" y="-4.39956875" curve="90"/>
+<vertex x="3" y="-3.89956875" curve="90"/>
+<vertex x="2.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="6" y="2.04" curve="90"/>
+<vertex x="6.5" y="2.54" curve="90"/>
+<vertex x="6" y="3.04" curve="90"/>
+<vertex x="5.5" y="2.54" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-14.5" y1="-9" x2="14.5" y2="9" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.62" y="-5.75" curve="90"/>
+<vertex x="10.62" y="-6.75" curve="90"/>
+<vertex x="11.62" y="-7.75" curve="90"/>
+<vertex x="12.62" y="-6.75" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+</package>
+<package name="RADINO_36PINS_HAND_SOLDERING">
+<description>&lt;b&gt;radino with 36 pins standard footprint&lt;/b&gt;
+&lt;hr&gt;
+Standard footprint suitable for manual soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino, radino32 and future radino families.&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Pins 31 and 32 are reserved for radino32 SWD and should be not connected  when using radino devices
+&lt;li&gt;Pins 33 to 36 are reserved for future families and should be not connected when using radino or radino32 divices
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="10" x="-13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="11" x="-13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="12" x="-13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="13" x="-13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="14" x="-13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="15" x="-13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="17" x="-8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="18" x="-6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="19" x="-3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="20" x="-1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="21" x="1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="22" x="3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="23" x="6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="24" x="8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="25" x="13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="26" x="13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="27" x="13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="28" x="13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="51" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="51" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="8.255" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-6.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-8.755" x2="-13.97" y2="-6.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="8.255" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-15.5" y1="-9.5" x2="15.5" y2="9.5" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.633" y="-5.755" curve="90"/>
+<vertex x="10.633" y="-6.755" curve="90"/>
+<vertex x="11.633" y="-7.755" curve="90"/>
+<vertex x="12.633" y="-6.755" curve="90"/>
+</polygon>
+<pad name="31" x="0" y="4.39956875" drill="0.91" diameter="1.6" rot="R90"/>
+<pad name="34" x="3" y="-4.39956875" drill="0.91" diameter="1.6" rot="R90"/>
+<pad name="33" x="3" y="2.54" drill="0.91" diameter="1.6" rot="R180"/>
+<pad name="32" x="0" y="-4.39956875" drill="0.91" diameter="1.6" rot="R180"/>
+<pad name="36" x="6" y="-4.39956875" drill="0.91" diameter="1.6" rot="R180"/>
+<pad name="35" x="6" y="2.54" drill="0.91" diameter="1.6" rot="R180"/>
+</package>
+<package name="RADINO_34PINS">
+<description>&lt;b&gt;radino with 36 pins standard footprint&lt;/b&gt;
+&lt;hr&gt;
+Standard footprint suitable for manual and reflow soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino, radino32 and future radino families.&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Pins 31 and 32 are reserved for radino32 SWD and should be not connected when using radino devices
+&lt;li&gt;Pins 33 to 36 are reserved for future radino families and should be not connected when using radino or radino32 divices
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="10" x="-13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="11" x="-13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="12" x="-13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="13" x="-13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="14" x="-13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="15" x="-13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="17" x="-8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="18" x="-6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="19" x="-3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="20" x="-1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="21" x="1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="22" x="3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="23" x="6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="24" x="8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="25" x="13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="26" x="13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="27" x="13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="28" x="13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="51" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="51" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="8.255" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-6.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-8.755" x2="-13.97" y2="-6.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="8.255" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<smd name="31" x="0" y="4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="32" x="0" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="34" x="3" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="36" x="6" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="3.89956875" curve="90"/>
+<vertex x="0.5" y="4.39956875" curve="90"/>
+<vertex x="0" y="4.89956875" curve="90"/>
+<vertex x="-0.5" y="4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="-4.89956875" curve="90"/>
+<vertex x="0.5" y="-4.39956875" curve="90"/>
+<vertex x="0" y="-3.89956875" curve="90"/>
+<vertex x="-0.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="6" y="-4.89956875" curve="90"/>
+<vertex x="6.5" y="-4.39956875" curve="90"/>
+<vertex x="6" y="-3.89956875" curve="90"/>
+<vertex x="5.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="3" y="-4.89956875" curve="90"/>
+<vertex x="3.5" y="-4.39956875" curve="90"/>
+<vertex x="3" y="-3.89956875" curve="90"/>
+<vertex x="2.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-15.5" y1="-9.5" x2="15.5" y2="9.5" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.633" y="-5.755" curve="90"/>
+<vertex x="10.633" y="-6.755" curve="90"/>
+<vertex x="11.633" y="-7.755" curve="90"/>
+<vertex x="12.633" y="-6.755" curve="90"/>
+</polygon>
+</package>
+<package name="RADINO_34PINS_HAND_SOLDERING">
+<description>&lt;b&gt;radino with 36 pins standard footprint&lt;/b&gt;
+&lt;hr&gt;
+Standard footprint suitable for manual soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino, radino32 and future radino families.&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Pins 31 and 32 are reserved for radino32 SWD and should be not connected  when using radino devices
+&lt;li&gt;Pins 33 to 36 are reserved for future families and should be not connected when using radino or radino32 divices
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="8.255" dx="1.4" dy="2.1" layer="1" rot="R180"/>
+<smd name="10" x="-13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="11" x="-13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="12" x="-13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="13" x="-13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="14" x="-13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="15" x="-13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="17" x="-8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="18" x="-6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="19" x="-3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="20" x="-1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="21" x="1.27" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="22" x="3.81" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="23" x="6.35" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="24" x="8.89" y="-8.255" dx="1.4" dy="2.1" layer="1"/>
+<smd name="25" x="13.97" y="-5.715" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="26" x="13.97" y="-3.175" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="27" x="13.97" y="-0.635" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="28" x="13.97" y="1.905" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.97" y="6.985" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="51"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="51"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="51" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="51" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="51" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="51"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="8.255" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-6.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="-8.755" x2="-13.97" y2="-6.755" width="0.127" layer="21"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="8.255" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-15.5" y1="-9.5" x2="15.5" y2="9.5" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.633" y="-5.755" curve="90"/>
+<vertex x="10.633" y="-6.755" curve="90"/>
+<vertex x="11.633" y="-7.755" curve="90"/>
+<vertex x="12.633" y="-6.755" curve="90"/>
+</polygon>
+<pad name="31" x="0" y="4.39956875" drill="0.91" diameter="1.6" rot="R90"/>
+<pad name="34" x="3" y="-4.39956875" drill="0.91" diameter="1.6" rot="R90"/>
+<pad name="32" x="0" y="-4.39956875" drill="0.91" diameter="1.6" rot="R180"/>
+<pad name="36" x="6" y="-4.39956875" drill="0.91" diameter="1.6" rot="R180"/>
+</package>
+<package name="RADINO_34PINS_SHORT_PINS">
+<description>&lt;b&gt;radino with 36 pins short pins footprint&lt;/b&gt;
+&lt;hr&gt;
+Extra small footprint suitable for space limited applicaion an reflow soldering. &lt;br&gt;
+The footprint is designed to take up all devices of the radino, radino32 and future radino families.&lt;br&gt;
+&lt;br&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;Pins 31 and 32 are reserved for radino32 SWD and should be not connected  when using radino devices
+&lt;li&gt;Pins 33 to 36 are reserved for future radino families and should be not connected when using radino or radino32 divices
+&lt;li&gt;Manual soldering is not recommended when using this footprint
+&lt;/ul&gt;</description>
+<smd name="1" x="8.89" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="2" x="6.35" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="3" x="3.81" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="4" x="1.27" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="5" x="-1.27" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="6" x="-3.81" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="7" x="-6.35" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="8" x="-8.89" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="9" x="-11.43" y="7.8525" dx="1.4" dy="1.295" layer="1" rot="R180"/>
+<smd name="10" x="-13.5675" y="6.985" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="11" x="-13.5675" y="4.445" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="12" x="-13.5675" y="1.905" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="13" x="-13.5675" y="-0.635" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="14" x="-13.5675" y="-3.175" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="15" x="-13.5675" y="-5.715" dx="1.4" dy="1.295" layer="1" rot="R270"/>
+<smd name="16" x="-11.43" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="17" x="-8.89" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="18" x="-6.35" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="19" x="-3.81" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="20" x="-1.27" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="21" x="1.27" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="22" x="3.81" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="23" x="6.35" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="24" x="8.89" y="-7.8525" dx="1.4" dy="1.295" layer="1"/>
+<smd name="25" x="13.5675" y="-5.715" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="26" x="13.5675" y="-3.175" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="27" x="13.5675" y="-0.635" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="28" x="13.5675" y="1.905" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<smd name="29" x="13.97" y="4.445" dx="1.4" dy="2.1" layer="1" rot="R90"/>
+<smd name="30" x="13.5675" y="6.985" dx="1.4" dy="1.295" layer="1" rot="R90"/>
+<wire x1="-13.97" y1="8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="13.97" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="9.89" y1="-8.255" x2="-12.43" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="9.89" y1="8.255" x2="-12.43" y2="8.255" width="0.127" layer="21"/>
+<wire x1="9.89" y1="-8.255" x2="10.39" y2="-8.755" width="0.127" layer="21" curve="-90"/>
+<wire x1="9.89" y1="8.255" x2="10.39" y2="8.755" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.43" y1="8.255" x2="-12.93" y2="8.755" width="0.127" layer="21" curve="-90"/>
+<wire x1="-12.43" y1="-8.255" x2="-12.93" y2="-8.755" width="0.127" layer="21" curve="90"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<wire x1="13.97" y1="8.755" x2="10.39" y2="8.755" width="0.127" layer="21"/>
+<wire x1="13.97" y1="-8.755" x2="10.39" y2="-8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="8.755" x2="-13.97" y2="8.755" width="0.127" layer="21"/>
+<wire x1="-12.93" y1="-8.755" x2="-13.97" y2="-8.755" width="0.127" layer="21"/>
+<circle x="11.645" y="7.25" radius="0.727890625" width="0.127" layer="21"/>
+<pad name="ANT" x="12.339" y="4.592" drill="0.91" diameter="1.6" rot="R90"/>
+<text x="0" y="-2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<smd name="31" x="0" y="4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="32" x="0" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="34" x="3" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<smd name="36" x="6" y="-4.39956875" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="3.89956875" curve="90"/>
+<vertex x="0.5" y="4.39956875" curve="90"/>
+<vertex x="0" y="4.89956875" curve="90"/>
+<vertex x="-0.5" y="4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="0" y="-4.89956875" curve="90"/>
+<vertex x="0.5" y="-4.39956875" curve="90"/>
+<vertex x="0" y="-3.89956875" curve="90"/>
+<vertex x="-0.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="6" y="-4.89956875" curve="90"/>
+<vertex x="6.5" y="-4.39956875" curve="90"/>
+<vertex x="6" y="-3.89956875" curve="90"/>
+<vertex x="5.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="31">
+<vertex x="3" y="-4.89956875" curve="90"/>
+<vertex x="3.5" y="-4.39956875" curve="90"/>
+<vertex x="3" y="-3.89956875" curve="90"/>
+<vertex x="2.5" y="-4.39956875" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="-10.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="5.32596875" curve="-90"/>
+<vertex x="-8.318540625" y="4.32596875" curve="-90"/>
+<vertex x="-9.318540625" y="3.32596875" curve="-90"/>
+</polygon>
+<rectangle x1="-14.5" y1="-9" x2="14.5" y2="9" layer="39"/>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="11.62" y="-5.75" curve="90"/>
+<vertex x="10.62" y="-6.75" curve="90"/>
+<vertex x="11.62" y="-7.75" curve="90"/>
+<vertex x="12.62" y="-6.75" curve="90"/>
+</polygon>
+<polygon width="0.000009375" layer="41" pour="hatch">
+<vertex x="12.5215" y="-6.5445" curve="90"/>
+<vertex x="11.5215" y="-7.5445" curve="90"/>
+<vertex x="12.5215" y="-8.5445" curve="90"/>
+<vertex x="13.5215" y="-7.5445" curve="90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="RADINO32_SWD">
+<pin name="P1_MOSI" x="-22.86" y="15.24" length="middle" direction="pas"/>
+<pin name="P2_MISO" x="-22.86" y="12.7" length="middle" direction="pas"/>
+<pin name="P3_SCK" x="-22.86" y="10.16" length="middle" direction="pas"/>
+<pin name="P4_D6" x="-22.86" y="7.62" length="middle" direction="pas"/>
+<pin name="P5_IO10" x="-22.86" y="5.08" length="middle" direction="pas"/>
+<pin name="P6_IO11" x="-22.86" y="2.54" length="middle" direction="pas"/>
+<pin name="P7_IO13" x="-22.86" y="0" length="middle" direction="pas"/>
+<pin name="P8_D5" x="-22.86" y="-2.54" length="middle" direction="pas"/>
+<pin name="P9_A5" x="-22.86" y="-5.08" length="middle" direction="pas"/>
+<pin name="P10_!RST" x="-7.62" y="-38.1" length="middle" direction="pas" rot="R90"/>
+<pin name="P28_GND@2" x="-2.54" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P12_D0(RX)" x="-2.54" y="-38.1" length="middle" direction="pas" rot="R90"/>
+<pin name="P13_D1(TX)" x="0" y="-38.1" length="middle" direction="pas" rot="R90"/>
+<pin name="P14_VCC" x="2.54" y="-38.1" length="middle" direction="pwr" rot="R90"/>
+<pin name="P15_BOOT_SEL" x="5.08" y="-38.1" length="middle" direction="pas" rot="R90"/>
+<pin name="P16_RD-" x="20.32" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="P17_RD+" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="P18_IO25" x="20.32" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="P19_A1" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="P20_A2" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="P21_A0" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="P22_A3" x="20.32" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="P23_D2(SDA)" x="20.32" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="P24_D3(SCL)" x="20.32" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="P25_IO12" x="5.08" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P26_TXLED" x="2.54" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P27_RXLED" x="0" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P29_ANT" x="-5.08" y="40.64" length="middle" direction="pas" rot="R270"/>
+<wire x1="15.24" y1="35.56" x2="15.24" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-33.02" x2="-17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-33.02" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="35.56" x2="15.24" y2="35.56" width="0.254" layer="94"/>
+<text x="-17.78" y="36.068" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P11_GND@1" x="-5.08" y="-38.1" length="middle" direction="pwr" rot="R90"/>
+<pin name="P30_GND@3" x="-7.62" y="40.64" length="middle" direction="pwr" rot="R270"/>
+<pin name="SWDIO" x="20.32" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="SWCLK" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="RADINO">
+<pin name="P1_MOSI" x="-22.86" y="10.16" length="middle"/>
+<pin name="P2_MISO" x="-22.86" y="7.62" length="middle"/>
+<pin name="P3_SCK" x="-22.86" y="5.08" length="middle"/>
+<pin name="P4_D6" x="-22.86" y="2.54" length="middle"/>
+<pin name="P5_IO10" x="-22.86" y="0" length="middle"/>
+<pin name="P6_IO11" x="-22.86" y="-2.54" length="middle"/>
+<pin name="P7_IO13" x="-22.86" y="-5.08" length="middle"/>
+<pin name="P8_D5" x="-22.86" y="-7.62" length="middle"/>
+<pin name="P9_A5" x="-22.86" y="-10.16" length="middle"/>
+<pin name="P10_!RST" x="-7.62" y="-30.48" length="middle" rot="R90"/>
+<pin name="P28_GND@2" x="-2.54" y="35.56" length="middle" direction="pas" rot="R270"/>
+<pin name="P12_D0(RX)" x="-2.54" y="-30.48" length="middle" rot="R90"/>
+<pin name="P13_D1(TX)" x="0" y="-30.48" length="middle" rot="R90"/>
+<pin name="P14_VCC" x="2.54" y="-30.48" length="middle" rot="R90"/>
+<pin name="P15_!HWB" x="5.08" y="-30.48" length="middle" rot="R90"/>
+<pin name="P16_RD-" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="P17_RD+" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="P18_VBUS" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="P19_A1" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="P20_A2" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="P21_A0" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="P22_A3" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="P23_D2(SDA)" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="P24_D3(SCL)" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="P25_IO12" x="5.08" y="35.56" length="middle" rot="R270"/>
+<pin name="P26_TXLED" x="2.54" y="35.56" length="middle" rot="R270"/>
+<pin name="P27_RXLED" x="0" y="35.56" length="middle" rot="R270"/>
+<pin name="P29_ANT" x="-5.08" y="35.56" length="middle" rot="R270"/>
+<wire x1="15.24" y1="30.48" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-25.4" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="30.48" x2="15.24" y2="30.48" width="0.254" layer="94"/>
+<text x="-17.78" y="30.988" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P30_GND@3" x="-7.62" y="35.56" length="middle" direction="pwr" rot="R270"/>
+<pin name="P11_GND@1" x="-5.08" y="-30.48" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="RADINO_36PINS">
+<pin name="P1_MOSI" x="-22.86" y="15.24" length="middle" direction="pas"/>
+<pin name="P2_MISO" x="-22.86" y="12.7" length="middle" direction="pas"/>
+<pin name="P3_SCK" x="-22.86" y="10.16" length="middle" direction="pas"/>
+<pin name="P4_D6" x="-22.86" y="7.62" length="middle" direction="pas"/>
+<pin name="P5_IO10" x="-22.86" y="5.08" length="middle" direction="pas"/>
+<pin name="P6_IO11" x="-22.86" y="2.54" length="middle" direction="pas"/>
+<pin name="P7_IO13" x="-22.86" y="0" length="middle" direction="pas"/>
+<pin name="P8_D5" x="-22.86" y="-2.54" length="middle" direction="pas"/>
+<pin name="P9_A5" x="-22.86" y="-5.08" length="middle" direction="pas"/>
+<pin name="P10_!RST" x="-7.62" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P28_GND@2" x="-2.54" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P12_D0(RX)" x="-2.54" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P13_D1(TX)" x="0" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P14_VCC" x="2.54" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="P15_BOOT_SEL" x="5.08" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P16_RD-" x="20.32" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="P17_RD+" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="P18_IO25" x="20.32" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="P19_A1" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="P20_A2" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="P21_A0" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="P22_A3" x="20.32" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="P23_D2(SDA)" x="20.32" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="P24_D3(SCL)" x="20.32" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="P25_IO12" x="5.08" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P26_TXLED" x="2.54" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P27_RXLED" x="0" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P29_ANT" x="-5.08" y="40.64" length="middle" direction="pas" rot="R270"/>
+<wire x1="15.24" y1="35.56" x2="15.24" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-40.64" x2="-17.78" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-40.64" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="35.56" x2="15.24" y2="35.56" width="0.254" layer="94"/>
+<text x="-17.78" y="36.068" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P11_GND@1" x="-5.08" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="P30_GND@3" x="-7.62" y="40.64" length="middle" direction="pwr" rot="R270"/>
+<pin name="SWDIO" x="20.32" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="SWCLK" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="P33" x="-22.86" y="-12.7" length="middle" direction="pas"/>
+<pin name="P34" x="-22.86" y="-15.24" length="middle" direction="pas"/>
+<pin name="P35" x="-22.86" y="-17.78" length="middle" direction="pas"/>
+<pin name="P36" x="-22.86" y="-20.32" length="middle" direction="pas"/>
+</symbol>
+<symbol name="RADINO_34PINS">
+<pin name="P1_MOSI" x="-22.86" y="15.24" length="middle" direction="pas"/>
+<pin name="P2_MISO" x="-22.86" y="12.7" length="middle" direction="pas"/>
+<pin name="P3_SCK" x="-22.86" y="10.16" length="middle" direction="pas"/>
+<pin name="P4_D6" x="-22.86" y="7.62" length="middle" direction="pas"/>
+<pin name="P5_IO10" x="-22.86" y="5.08" length="middle" direction="pas"/>
+<pin name="P6_IO11" x="-22.86" y="2.54" length="middle" direction="pas"/>
+<pin name="P7_IO13" x="-22.86" y="0" length="middle" direction="pas"/>
+<pin name="P8_D5" x="-22.86" y="-2.54" length="middle" direction="pas"/>
+<pin name="P9_A5" x="-22.86" y="-5.08" length="middle" direction="pas"/>
+<pin name="P10_!RST" x="-7.62" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P28_GND@2" x="-2.54" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P12_D0(RX)" x="-2.54" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P13_D1(TX)" x="0" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P14_VCC" x="2.54" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="P15_BOOT_SEL" x="5.08" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P16_RD-" x="20.32" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="P17_RD+" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="P18_IO25" x="20.32" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="P19_A1" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="P20_A2" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="P21_A0" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="P22_A3" x="20.32" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="P23_D2(SDA)" x="20.32" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="P24_D3(SCL)" x="20.32" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="P25_IO12" x="5.08" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P26_TXLED" x="2.54" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P27_RXLED" x="0" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P29_ANT" x="-5.08" y="40.64" length="middle" direction="pas" rot="R270"/>
+<wire x1="15.24" y1="35.56" x2="15.24" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-40.64" x2="-17.78" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-40.64" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="35.56" x2="15.24" y2="35.56" width="0.254" layer="94"/>
+<text x="-17.78" y="36.068" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P11_GND@1" x="-5.08" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="P30_GND@3" x="-7.62" y="40.64" length="middle" direction="pwr" rot="R270"/>
+<pin name="SWDIO" x="20.32" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="SWCLK" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="P34" x="-22.86" y="-15.24" length="middle" direction="pas"/>
+<pin name="P36" x="-22.86" y="-20.32" length="middle" direction="pas"/>
+</symbol>
+<symbol name="RADINO_34PINS_DW1000">
+<pin name="P1_MOSI" x="-22.86" y="15.24" length="middle" direction="pas"/>
+<pin name="P2_MISO" x="-22.86" y="12.7" length="middle" direction="pas"/>
+<pin name="P3_SCK" x="-22.86" y="10.16" length="middle" direction="pas"/>
+<pin name="P4_D6" x="-22.86" y="7.62" length="middle" direction="pas"/>
+<pin name="P5_IO10" x="-22.86" y="5.08" length="middle" direction="pas"/>
+<pin name="P6_IO11" x="-22.86" y="2.54" length="middle" direction="pas"/>
+<pin name="P7_IO13" x="-22.86" y="0" length="middle" direction="pas"/>
+<pin name="P8_D5" x="-22.86" y="-2.54" length="middle" direction="pas"/>
+<pin name="P9_A5" x="-22.86" y="-5.08" length="middle" direction="pas"/>
+<pin name="P10_!RST" x="-7.62" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P28_GND@2" x="-2.54" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P12_D0(RX)" x="-2.54" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P13_D1(TX)" x="0" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P14_VCC" x="2.54" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="P15_BOOT_SEL" x="5.08" y="-45.72" length="middle" direction="pas" rot="R90"/>
+<pin name="P16_RD-" x="20.32" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="P17_RD+" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="P18_IO25" x="20.32" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="P19_A1" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="P20_A2" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="P21_A0" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="P22_A3" x="20.32" y="10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="P23_D2(SDA)" x="20.32" y="12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="P24_D3(SCL)" x="20.32" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="P25_IO12" x="5.08" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P26_TXLED" x="2.54" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P27_RXLED" x="0" y="40.64" length="middle" direction="pas" rot="R270"/>
+<pin name="P29_ANT" x="-5.08" y="40.64" length="middle" direction="pas" rot="R270"/>
+<wire x1="15.24" y1="35.56" x2="15.24" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-40.64" x2="-17.78" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-40.64" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="35.56" x2="15.24" y2="35.56" width="0.254" layer="94"/>
+<text x="-17.78" y="36.068" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P11_GND@1" x="-5.08" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="P30_GND@3" x="-7.62" y="40.64" length="middle" direction="pwr" rot="R270"/>
+<pin name="SWDIO" x="20.32" y="-10.16" length="middle" direction="pas" rot="R180"/>
+<pin name="SWCLK" x="20.32" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="DW1000_SYNC" x="-22.86" y="-15.24" length="middle" direction="pas"/>
+<pin name="DW1000_EXTCLK" x="-22.86" y="-20.32" length="middle" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RADINO32_DW1000" prefix="SOC">
+<description>&lt;h2&gt;radino32 DW1000&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino32 DW1000 combines an STM32L151 with the DW1000 UWB radio from Decawave in a small form-factor EMC-compliant module.
+The DW1000 is a fully integrated single chip Ultra Wideband (UWB) low-power low-cost transceiver IC compliant to IEEE802.15.4-2011. 
+It can be used in 2-way ranging or TDOA location systems to locate assets to a precision of 10 cm. 
+It also supports data transfer at rates up to 6.8 Mbps.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=186"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RADINO_34PINS_DW1000" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO_34PINS">
+<connects>
+<connect gate="G$1" pin="DW1000_EXTCLK" pad="36"/>
+<connect gate="G$1" pin="DW1000_SYNC" pad="34"/>
+<connect gate="G$1" pin="P10_!RST" pad="10"/>
+<connect gate="G$1" pin="P11_GND@1" pad="11"/>
+<connect gate="G$1" pin="P12_D0(RX)" pad="12"/>
+<connect gate="G$1" pin="P13_D1(TX)" pad="13"/>
+<connect gate="G$1" pin="P14_VCC" pad="14"/>
+<connect gate="G$1" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="G$1" pin="P16_RD-" pad="16"/>
+<connect gate="G$1" pin="P17_RD+" pad="17"/>
+<connect gate="G$1" pin="P18_IO25" pad="18"/>
+<connect gate="G$1" pin="P19_A1" pad="19"/>
+<connect gate="G$1" pin="P1_MOSI" pad="1"/>
+<connect gate="G$1" pin="P20_A2" pad="20"/>
+<connect gate="G$1" pin="P21_A0" pad="21"/>
+<connect gate="G$1" pin="P22_A3" pad="22"/>
+<connect gate="G$1" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="G$1" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="G$1" pin="P25_IO12" pad="25"/>
+<connect gate="G$1" pin="P26_TXLED" pad="26"/>
+<connect gate="G$1" pin="P27_RXLED" pad="27"/>
+<connect gate="G$1" pin="P28_GND@2" pad="28"/>
+<connect gate="G$1" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="G$1" pin="P2_MISO" pad="2"/>
+<connect gate="G$1" pin="P30_GND@3" pad="30"/>
+<connect gate="G$1" pin="P3_SCK" pad="3"/>
+<connect gate="G$1" pin="P4_D6" pad="4"/>
+<connect gate="G$1" pin="P5_IO10" pad="5"/>
+<connect gate="G$1" pin="P6_IO11" pad="6"/>
+<connect gate="G$1" pin="P7_IO13" pad="7"/>
+<connect gate="G$1" pin="P8_D5" pad="8"/>
+<connect gate="G$1" pin="P9_A5" pad="9"/>
+<connect gate="G$1" pin="SWCLK" pad="32"/>
+<connect gate="G$1" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HS" package="RADINO_34PINS_HAND_SOLDERING">
+<connects>
+<connect gate="G$1" pin="DW1000_EXTCLK" pad="36"/>
+<connect gate="G$1" pin="DW1000_SYNC" pad="34"/>
+<connect gate="G$1" pin="P10_!RST" pad="10"/>
+<connect gate="G$1" pin="P11_GND@1" pad="11"/>
+<connect gate="G$1" pin="P12_D0(RX)" pad="12"/>
+<connect gate="G$1" pin="P13_D1(TX)" pad="13"/>
+<connect gate="G$1" pin="P14_VCC" pad="14"/>
+<connect gate="G$1" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="G$1" pin="P16_RD-" pad="16"/>
+<connect gate="G$1" pin="P17_RD+" pad="17"/>
+<connect gate="G$1" pin="P18_IO25" pad="18"/>
+<connect gate="G$1" pin="P19_A1" pad="19"/>
+<connect gate="G$1" pin="P1_MOSI" pad="1"/>
+<connect gate="G$1" pin="P20_A2" pad="20"/>
+<connect gate="G$1" pin="P21_A0" pad="21"/>
+<connect gate="G$1" pin="P22_A3" pad="22"/>
+<connect gate="G$1" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="G$1" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="G$1" pin="P25_IO12" pad="25"/>
+<connect gate="G$1" pin="P26_TXLED" pad="26"/>
+<connect gate="G$1" pin="P27_RXLED" pad="27"/>
+<connect gate="G$1" pin="P28_GND@2" pad="28"/>
+<connect gate="G$1" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="G$1" pin="P2_MISO" pad="2"/>
+<connect gate="G$1" pin="P30_GND@3" pad="30"/>
+<connect gate="G$1" pin="P3_SCK" pad="3"/>
+<connect gate="G$1" pin="P4_D6" pad="4"/>
+<connect gate="G$1" pin="P5_IO10" pad="5"/>
+<connect gate="G$1" pin="P6_IO11" pad="6"/>
+<connect gate="G$1" pin="P7_IO13" pad="7"/>
+<connect gate="G$1" pin="P8_D5" pad="8"/>
+<connect gate="G$1" pin="P9_A5" pad="9"/>
+<connect gate="G$1" pin="SWCLK" pad="32"/>
+<connect gate="G$1" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_34PINS_SHORT_PINS">
+<connects>
+<connect gate="G$1" pin="DW1000_EXTCLK" pad="36"/>
+<connect gate="G$1" pin="DW1000_SYNC" pad="34"/>
+<connect gate="G$1" pin="P10_!RST" pad="10"/>
+<connect gate="G$1" pin="P11_GND@1" pad="11"/>
+<connect gate="G$1" pin="P12_D0(RX)" pad="12"/>
+<connect gate="G$1" pin="P13_D1(TX)" pad="13"/>
+<connect gate="G$1" pin="P14_VCC" pad="14"/>
+<connect gate="G$1" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="G$1" pin="P16_RD-" pad="16"/>
+<connect gate="G$1" pin="P17_RD+" pad="17"/>
+<connect gate="G$1" pin="P18_IO25" pad="18"/>
+<connect gate="G$1" pin="P19_A1" pad="19"/>
+<connect gate="G$1" pin="P1_MOSI" pad="1"/>
+<connect gate="G$1" pin="P20_A2" pad="20"/>
+<connect gate="G$1" pin="P21_A0" pad="21"/>
+<connect gate="G$1" pin="P22_A3" pad="22"/>
+<connect gate="G$1" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="G$1" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="G$1" pin="P25_IO12" pad="25"/>
+<connect gate="G$1" pin="P26_TXLED" pad="26"/>
+<connect gate="G$1" pin="P27_RXLED" pad="27"/>
+<connect gate="G$1" pin="P28_GND@2" pad="28"/>
+<connect gate="G$1" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="G$1" pin="P2_MISO" pad="2"/>
+<connect gate="G$1" pin="P30_GND@3" pad="30"/>
+<connect gate="G$1" pin="P3_SCK" pad="3"/>
+<connect gate="G$1" pin="P4_D6" pad="4"/>
+<connect gate="G$1" pin="P5_IO10" pad="5"/>
+<connect gate="G$1" pin="P6_IO11" pad="6"/>
+<connect gate="G$1" pin="P7_IO13" pad="7"/>
+<connect gate="G$1" pin="P8_D5" pad="8"/>
+<connect gate="G$1" pin="P9_A5" pad="9"/>
+<connect gate="G$1" pin="SWCLK" pad="32"/>
+<connect gate="G$1" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO32_WIFI" prefix="SOC">
+<description>&lt;h2&gt;radino32 WiFi&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino32 WiFi combines an STM32L151 with the ESP8266EX SoC WiFi in a small form-factor EMC-compliant module.&lt;p&gt;
+The radino32 WiFi is the follower of the radino WiFi and offers improved CPU power, larger RAM-, Flash- 
+and EPROM-memories and expanded pin functionalities.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=177"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO32_SWD" x="-10.16" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="RADINO32">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.358" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_HS" package="RADINO32_HAND_SOLDERING">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.358" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO32_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.358" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO32_NRF8001" prefix="SOC">
+<description>&lt;h2&gt;radino32 nRF8001 Bluetooth, Low Energy (BLE)&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino32 nRF8001 combines an STM32L151 Cortex M3 with the nRF8001 SoC Bluetooth-Low-Energy in a small form-factor EMC-compliant module.
+The radino32 nRF8001 is the follower of the radino nRF8001 and offers improved CPU power, larger RAM-, Flash- and EPROM-memories and expanded pin functionalities.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=178"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO32_SWD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO32">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.357" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_HS" package="RADINO32_HAND_SOLDERING">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.357" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO32_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.357" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO32_CC1101_868_MHZ" prefix="SOC">
+<description>&lt;h2&gt;radino32 CC1101 868 MHz&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino32 CC1101 combines an STM32L151 with the CC1101 by Texas Instruments operating in the 868 MHz-Band.
+The radino32 CC1101 is the follower of the radino CC1101 and offers improved CPU power, larger RAM-, Flash- and EPROM-memories and expanded pin functionalities.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=180"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO32_SWD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO32">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.356A001" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_HS" package="RADINO32_HAND_SOLDERING">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.356A001" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO32_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.356A001" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO32_CC1101_433_MHZ" prefix="SOC">
+<description>&lt;h2&gt;radino32 CC1101 433 MHz&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino32 CC1101 combines an STM32L151 with the CC1101 by Texas Instruments operating in the 433 MHz-Band.
+The radino32 CC1101 is the follower of the radino CC1101 and offers improved CPU power, larger RAM-, Flash- and EPROM-memories and expanded pin functionalities.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=179"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO32_SWD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO32">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.356" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_HS" package="RADINO32_HAND_SOLDERING">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.356" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO32_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.356" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO_WIFI" prefix="SOC">
+<description>&lt;h2&gt;radino WiFi with ESP8266EX&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino WiFi combines an ATmega32U4 (Arduino Micro) with the popular ESP8266EX WiFi SoC in a small form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=29"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.321B" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.321B" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO_NRF8001" prefix="SOC">
+<description>&lt;h2&gt;radino nRF8001, Bluetooth-Low-Energy (BLE)&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino nRF8001 combines an ATmega32U4 (Arduino Micro) with a Bluetooth-Low-Energy(BLE) radio Frontend in a small
+form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=31"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.311" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.311" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO_RF233" prefix="SOC">
+<description>&lt;h2&gt;radino RF233 with Atmel AT86RF233&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino RF233 combines an ATmega32U4 (Arduino Micro) with a AT86RF233 radio chip from Atmel in a small
+form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=169"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.339" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.339" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO_RF69_868_MHZ" prefix="SOC">
+<description>&lt;h2&gt;radino RF69 868 MHz&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino RF69 combines an ATmega32U4 (Arduino Micro) and a RF69 radio frontend with 868MHz in a small
+form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=159"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.332A001" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.332A001" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO_RF69_433_MHZ" prefix="SOC">
+<description>&lt;h2&gt;radino RF69 433 MHz&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino RF69 combines an ATmega32U4 (Arduino Micro) and a RF69 radio frontend with 433MHz in a small
+form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=160"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.332" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.332" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO_CC1101_868_915_MHZ" prefix="SOC">
+<description>&lt;h2&gt;radino CC1101 868/915 MHz &lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino CC1101 combines an ATmega32U4 (Arduino Micro) with a CC1101 in a small
+form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=32"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.320" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.320" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO_CC1101_433_MHZ" prefix="SOC">
+<description>&lt;h2&gt;radino CC1101 433 MHz &lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino CC1101 combines an ATmega32U4 (Arduino Micro) with a CC1101 in a small
+form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=33"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.320A001" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.320A001" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RADINO32_SX1272" prefix="SOC">
+<description>&lt;h2&gt;radino32 SX1272&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+The In-Circuit radino32 SX1272 combines an STM32L151 with the Semtech SX1272 in a small form-factor EMC-compliant module.&lt;p&gt;
+The radino32 SX1272 offers improved CPU power, larger RAM-, Flash- 
+and EPROM-memories and expanded pin functionalities.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/product_info.php?cPath=22_27&amp;products_id=195"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO32_SWD" x="-5.08" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="RADINO32">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.384" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_HS" package="RADINO32_HAND_SOLDERING">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.384" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SP" package="RADINO32_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ORDER_NUMBER" value="901.384" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DUMMY_RADINO">
+<description>&lt;h2&gt;radino DUMMY&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+Dummy for In-Circuit radino modules, which combines an ATmega32U4 (Arduino Micro) with a radio chip in a small form-factor EMC-compliant enclosure.&lt;p&gt;
+Notes:&lt;ul&gt;
+&lt;li&gt;if it is not clear which module should be used, then use the radino32 DUMMY
+&lt;/ul&gt;
+
+&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/index.php?cPath=22_27"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_!HWB" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_VBUS" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DUMMY_RADINO32">
+<description>&lt;h2&gt;radino32 DUMMY&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+Dummy for In-Circuit radino32 modules, which combines a STM32L151 with a radio chip in a small form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/index.php?cPath=22_27"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO32_SWD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO32">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HS" package="RADINO32_HAND_SOLDERING">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SP" package="RADINO32_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DUMMY_RADINO_36PIN">
+<description>&lt;h2&gt;radino with 36 pins DUMMY&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+Dummy for future In-Circuit radino modules in a small form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/index.php?cPath=22_27"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="A" symbol="RADINO_36PINS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO_36PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P33" pad="33"/>
+<connect gate="A" pin="P34" pad="34"/>
+<connect gate="A" pin="P35" pad="35"/>
+<connect gate="A" pin="P36" pad="36"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HS" package="RADINO_36PINS_HAND_SOLDERING">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P33" pad="33"/>
+<connect gate="A" pin="P34" pad="34"/>
+<connect gate="A" pin="P35" pad="35"/>
+<connect gate="A" pin="P36" pad="36"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_36PINS_SHORT_PINS">
+<connects>
+<connect gate="A" pin="P10_!RST" pad="10"/>
+<connect gate="A" pin="P11_GND@1" pad="11"/>
+<connect gate="A" pin="P12_D0(RX)" pad="12"/>
+<connect gate="A" pin="P13_D1(TX)" pad="13"/>
+<connect gate="A" pin="P14_VCC" pad="14"/>
+<connect gate="A" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="A" pin="P16_RD-" pad="16"/>
+<connect gate="A" pin="P17_RD+" pad="17"/>
+<connect gate="A" pin="P18_IO25" pad="18"/>
+<connect gate="A" pin="P19_A1" pad="19"/>
+<connect gate="A" pin="P1_MOSI" pad="1"/>
+<connect gate="A" pin="P20_A2" pad="20"/>
+<connect gate="A" pin="P21_A0" pad="21"/>
+<connect gate="A" pin="P22_A3" pad="22"/>
+<connect gate="A" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="A" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="A" pin="P25_IO12" pad="25"/>
+<connect gate="A" pin="P26_TXLED" pad="26"/>
+<connect gate="A" pin="P27_RXLED" pad="27"/>
+<connect gate="A" pin="P28_GND@2" pad="28"/>
+<connect gate="A" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="A" pin="P2_MISO" pad="2"/>
+<connect gate="A" pin="P30_GND@3" pad="30"/>
+<connect gate="A" pin="P33" pad="33"/>
+<connect gate="A" pin="P34" pad="34"/>
+<connect gate="A" pin="P35" pad="35"/>
+<connect gate="A" pin="P36" pad="36"/>
+<connect gate="A" pin="P3_SCK" pad="3"/>
+<connect gate="A" pin="P4_D6" pad="4"/>
+<connect gate="A" pin="P5_IO10" pad="5"/>
+<connect gate="A" pin="P6_IO11" pad="6"/>
+<connect gate="A" pin="P7_IO13" pad="7"/>
+<connect gate="A" pin="P8_D5" pad="8"/>
+<connect gate="A" pin="P9_A5" pad="9"/>
+<connect gate="A" pin="SWCLK" pad="32"/>
+<connect gate="A" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DUMMY_RADINO_34PIN">
+<description>&lt;h2&gt;radino with 34 pins DUMMY&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h3&gt;Description&lt;/h3&gt;
+Dummy for future In-Circuit radino modules in a small form-factor EMC-compliant enclosure.&lt;p&gt;
+Modul-specific Arduino libraries and additional information are available at:
+&lt;a href="http://shop.in-circuit.de/index.php?cPath=22_27"&gt;in-circuit.de/product_info&lt;/a&gt;
+&lt;br&gt;
+For more Products and Arduino compatible RF-Modules please visit our website:
+&lt;a href="http://shop.in-circuit.de/index.php"&gt;shop.in-circuit.de&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RADINO_34PINS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RADINO_34PINS">
+<connects>
+<connect gate="G$1" pin="P10_!RST" pad="10"/>
+<connect gate="G$1" pin="P11_GND@1" pad="11"/>
+<connect gate="G$1" pin="P12_D0(RX)" pad="12"/>
+<connect gate="G$1" pin="P13_D1(TX)" pad="13"/>
+<connect gate="G$1" pin="P14_VCC" pad="14"/>
+<connect gate="G$1" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="G$1" pin="P16_RD-" pad="16"/>
+<connect gate="G$1" pin="P17_RD+" pad="17"/>
+<connect gate="G$1" pin="P18_IO25" pad="18"/>
+<connect gate="G$1" pin="P19_A1" pad="19"/>
+<connect gate="G$1" pin="P1_MOSI" pad="1"/>
+<connect gate="G$1" pin="P20_A2" pad="20"/>
+<connect gate="G$1" pin="P21_A0" pad="21"/>
+<connect gate="G$1" pin="P22_A3" pad="22"/>
+<connect gate="G$1" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="G$1" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="G$1" pin="P25_IO12" pad="25"/>
+<connect gate="G$1" pin="P26_TXLED" pad="26"/>
+<connect gate="G$1" pin="P27_RXLED" pad="27"/>
+<connect gate="G$1" pin="P28_GND@2" pad="28"/>
+<connect gate="G$1" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="G$1" pin="P2_MISO" pad="2"/>
+<connect gate="G$1" pin="P30_GND@3" pad="30"/>
+<connect gate="G$1" pin="P34" pad="34"/>
+<connect gate="G$1" pin="P36" pad="36"/>
+<connect gate="G$1" pin="P3_SCK" pad="3"/>
+<connect gate="G$1" pin="P4_D6" pad="4"/>
+<connect gate="G$1" pin="P5_IO10" pad="5"/>
+<connect gate="G$1" pin="P6_IO11" pad="6"/>
+<connect gate="G$1" pin="P7_IO13" pad="7"/>
+<connect gate="G$1" pin="P8_D5" pad="8"/>
+<connect gate="G$1" pin="P9_A5" pad="9"/>
+<connect gate="G$1" pin="SWCLK" pad="32"/>
+<connect gate="G$1" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_HS" package="RADINO_34PINS_HAND_SOLDERING">
+<connects>
+<connect gate="G$1" pin="P10_!RST" pad="10"/>
+<connect gate="G$1" pin="P11_GND@1" pad="11"/>
+<connect gate="G$1" pin="P12_D0(RX)" pad="12"/>
+<connect gate="G$1" pin="P13_D1(TX)" pad="13"/>
+<connect gate="G$1" pin="P14_VCC" pad="14"/>
+<connect gate="G$1" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="G$1" pin="P16_RD-" pad="16"/>
+<connect gate="G$1" pin="P17_RD+" pad="17"/>
+<connect gate="G$1" pin="P18_IO25" pad="18"/>
+<connect gate="G$1" pin="P19_A1" pad="19"/>
+<connect gate="G$1" pin="P1_MOSI" pad="1"/>
+<connect gate="G$1" pin="P20_A2" pad="20"/>
+<connect gate="G$1" pin="P21_A0" pad="21"/>
+<connect gate="G$1" pin="P22_A3" pad="22"/>
+<connect gate="G$1" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="G$1" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="G$1" pin="P25_IO12" pad="25"/>
+<connect gate="G$1" pin="P26_TXLED" pad="26"/>
+<connect gate="G$1" pin="P27_RXLED" pad="27"/>
+<connect gate="G$1" pin="P28_GND@2" pad="28"/>
+<connect gate="G$1" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="G$1" pin="P2_MISO" pad="2"/>
+<connect gate="G$1" pin="P30_GND@3" pad="30"/>
+<connect gate="G$1" pin="P34" pad="34"/>
+<connect gate="G$1" pin="P36" pad="36"/>
+<connect gate="G$1" pin="P3_SCK" pad="3"/>
+<connect gate="G$1" pin="P4_D6" pad="4"/>
+<connect gate="G$1" pin="P5_IO10" pad="5"/>
+<connect gate="G$1" pin="P6_IO11" pad="6"/>
+<connect gate="G$1" pin="P7_IO13" pad="7"/>
+<connect gate="G$1" pin="P8_D5" pad="8"/>
+<connect gate="G$1" pin="P9_A5" pad="9"/>
+<connect gate="G$1" pin="SWCLK" pad="32"/>
+<connect gate="G$1" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SP" package="RADINO_34PINS_SHORT_PINS">
+<connects>
+<connect gate="G$1" pin="P10_!RST" pad="10"/>
+<connect gate="G$1" pin="P11_GND@1" pad="11"/>
+<connect gate="G$1" pin="P12_D0(RX)" pad="12"/>
+<connect gate="G$1" pin="P13_D1(TX)" pad="13"/>
+<connect gate="G$1" pin="P14_VCC" pad="14"/>
+<connect gate="G$1" pin="P15_BOOT_SEL" pad="15"/>
+<connect gate="G$1" pin="P16_RD-" pad="16"/>
+<connect gate="G$1" pin="P17_RD+" pad="17"/>
+<connect gate="G$1" pin="P18_IO25" pad="18"/>
+<connect gate="G$1" pin="P19_A1" pad="19"/>
+<connect gate="G$1" pin="P1_MOSI" pad="1"/>
+<connect gate="G$1" pin="P20_A2" pad="20"/>
+<connect gate="G$1" pin="P21_A0" pad="21"/>
+<connect gate="G$1" pin="P22_A3" pad="22"/>
+<connect gate="G$1" pin="P23_D2(SDA)" pad="23"/>
+<connect gate="G$1" pin="P24_D3(SCL)" pad="24"/>
+<connect gate="G$1" pin="P25_IO12" pad="25"/>
+<connect gate="G$1" pin="P26_TXLED" pad="26"/>
+<connect gate="G$1" pin="P27_RXLED" pad="27"/>
+<connect gate="G$1" pin="P28_GND@2" pad="28"/>
+<connect gate="G$1" pin="P29_ANT" pad="29 ANT"/>
+<connect gate="G$1" pin="P2_MISO" pad="2"/>
+<connect gate="G$1" pin="P30_GND@3" pad="30"/>
+<connect gate="G$1" pin="P34" pad="34"/>
+<connect gate="G$1" pin="P36" pad="36"/>
+<connect gate="G$1" pin="P3_SCK" pad="3"/>
+<connect gate="G$1" pin="P4_D6" pad="4"/>
+<connect gate="G$1" pin="P5_IO10" pad="5"/>
+<connect gate="G$1" pin="P6_IO11" pad="6"/>
+<connect gate="G$1" pin="P7_IO13" pad="7"/>
+<connect gate="G$1" pin="P8_D5" pad="8"/>
+<connect gate="G$1" pin="P9_A5" pad="9"/>
+<connect gate="G$1" pin="SWCLK" pad="32"/>
+<connect gate="G$1" pin="SWDIO" pad="31"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

@@ -1,0 +1,9 @@
+Manufacturer=Nordic Semiconductor
+PartNumber=NRF52832-CIAA-R
+PartCategory=Integrated Circuit
+PackageCategory=BGA
+PinCount=50
+Version=1.1
+Released=2017-04-06 08:55:07
+Downloaded=2019-10-27 00:27:19
+3D=Y

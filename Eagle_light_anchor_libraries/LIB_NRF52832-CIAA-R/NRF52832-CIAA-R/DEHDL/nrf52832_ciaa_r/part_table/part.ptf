@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'NRF52832_CIAA_R'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Nordic Semiconductor", "NRF52832-CIAA-R" (!) = "", "BGA50C40P7X8_296X323X40", "BGA", "949-NRF52832-CIAA-R", "https://www.mouser.com/Search/Refine.aspx?Keyword=949-NRF52832-CIAA-R", "", "", "BLE 2.4GHZ WLCSP 13"", "http://infocenter.nordicsemi.com/pdf/nRF52832_PB_v1.4.pdf", "0.399 mm"
+END_PART
+
+END.

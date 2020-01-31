@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NRF52832-CIAA-R
+D BLE 2.4GHZ WLCSP 13"
+K
+F http://infocenter.nordicsemi.com/pdf/nRF52832_PB_v1.4.pdf
+$ENDCMP
+#
+#End Doc Library
